@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".feeder.jadwal_jam.DetailUmur76Activity">
+
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:id="@+id/idtungguumur76"
+        android:layout_marginTop="50dp"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/idmenuumur76"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:background="@color/cardview_light_background"
+            android:orientation="vertical"
+            android:padding="3dp">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginBottom="5dp"
+                    android:weightSum="5"
+                    android:layout_gravity="center">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:paddingTop="16dp"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp"
+                        android:text="Shrimp aged 76 to 90 days require as much as 70,5 – 54 grams of feed each time. Please set the play time speed by 9,72 – 6,9 seconds to feed as much as - + 70,5 – 54 gram" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:paddingTop="16dp"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp"
+                        android:text="Shrimp will be fed 5 times a day which is 4,8 hours. The calculation starts when the user presses the save button" />
+
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    app:cardCornerRadius="8dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="3dp">
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:weightSum="5"
+                                android:layout_gravity="center">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="3"
+                                    android:paddingTop="10dp"
+                                    android:paddingLeft="10dp"
+                                    android:textStyle="bold"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="16sp"
+                                    android:text="Rotate feed speed / second" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_weight="2"
+                                    android:orientation="horizontal"
+                                    android:weightSum="3"
+                                    android:focusable="true" android:focusableInTouchMode="true"
+                                    android:layout_height="match_parent">
+
+                                    <EditText
+                                        android:id="@+id/id_U6_jam1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:ems="12"
+                                        android:gravity="start|center"
+                                        android:paddingLeft="10dp"
+                                        android:textColor="@android:color/black"
+                                        android:textSize="13sp"
+                                        android:text="10" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </FrameLayout>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_weight="2"
+                    android:weightSum="2"
+                    android:layout_height="match_parent">
+                    <Button
+                        android:id="@+id/btn_hapusU6"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+                        android:textAllCaps="false"
+                        android:textColor="@android:color/white"
+                        android:background="@android:color/holo_red_light"
+                        android:textSize="13sp"
+                        android:text="Delete" />
+                    <Button
+                        android:id="@+id/btn_simpanU6"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="8dp"
+                        android:textAllCaps="false"
+                        android:layout_weight="1"
+                        android:textColor="@android:color/white"
+                        android:background="@color/colorPrimary"
+                        android:textSize="13sp"
+                        android:text="Save" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>

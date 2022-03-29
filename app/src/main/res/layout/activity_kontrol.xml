@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    tools:context=".kontrol.KontrolActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/idmenucontrol"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/idtvkoneksi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/idln"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="9dp"
+            android:text="" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/idln"
+            android:weightSum="2"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btncon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="testkoneksi"
+                android:text="Test Connection"
+                android:textAllCaps="false"
+                tools:text="Test Connection" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="91dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Control Arduino"
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <!--<Space-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="20sp" />-->
+
+            <!--<Switch-->
+                <!--android:id="@+id/switchsensor"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Sensor" />-->
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/idtest"
+                    android:gravity="center|start"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Test Feeder"
+                    android:layout_weight="1"
+                    android:textColor="@color/cardview_dark_background"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_weight="2"
+                    android:id="@+id/idtestfeeder"
+                    android:textColor="@color/cardview_dark_background"
+                    tools:text="Check"
+                    android:onClick="testfeeder"
+                    android:textAllCaps="false"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+
+            <!--<Switch-->
+                <!--android:id="@+id/switchfeeder"-->
+                <!--android:checked="false"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Feeder" />-->
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:id="@+id/idtunggucontrol"
+        android:layout_marginTop="50dp"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!--<item-->
+        <!--android:id="@+id/idmenuhariini"-->
+        <!--android:icon="@drawable/ic_file_download_black_24dp"-->
+        <!--app:showAsAction="never"-->
+        <!--android:title="Now" />-->
+    <!--<item-->
+        <!--android:id="@+id/idmenukemarin"-->
+        <!--android:icon="@drawable/ic_file_download_black_24dp"-->
+        <!--app:showAsAction="never"-->
+        <!--android:title="Yesterday" />-->
+    <!--<item-->
+        <!--android:id="@+id/idmenuseluruhnya"-->
+        <!--android:icon="@drawable/ic_file_download_black_24dp"-->
+        <!--app:showAsAction="never"-->
+        <!--android:title="All time" />-->
+    <!--<item-->
+        <!--android:id="@+id/idmenudelete"-->
+        <!--android:icon="@drawable/ic_file_download_black_24dp"-->
+        <!--app:showAsAction="never"-->
+        <!--android:title="Reset" />-->
+    <item
+        android:id="@+id/idmenudownload"
+        android:icon="@drawable/ic_file_download_black_24dp"
+        app:showAsAction="always"
+        android:title="Download" />
+
+</menu>

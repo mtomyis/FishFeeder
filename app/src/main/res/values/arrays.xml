@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="genres">
+        <item>Semua</item>
+        <item>Suhu</item>
+        <item>Ph</item>
+        <item>Oksigen</item>
+    </string-array>
+</resources>

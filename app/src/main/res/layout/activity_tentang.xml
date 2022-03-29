@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:weightSum="10"
+    android:background="@color/colorAccent"
+    tools:context=".TentangActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="9"
+        android:layout_height="match_parent">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:layout_margin="16dp"
+        android:paddingTop="30dp"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/lg" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/cardview_light_background"
+            android:textAlignment="center"
+            android:text="This Research Is Supported By" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/cardview_light_background"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="DRPM Ristek Dikti 2019" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_marginTop="8dp"
+            android:textAlignment="center"
+            android:textColor="@color/cardview_light_background"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PKPT Scheme" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_marginTop="8dp"
+            android:textAlignment="center"
+            android:textColor="@color/cardview_light_background"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="POLIWANGI - PENS" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:textAlignment="center"
+            android:textColor="@color/cardview_light_background"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2019" />
+    </LinearLayout>
+
+</LinearLayout>
